@@ -14,22 +14,26 @@ API Rest para la gestion escolar que permite la autenticación de usuarios con d
 
 ## 📂 Estructura del proyecto
 
-- `App`: Servicios de aplicación y lógica de negocio.
-- `Core`: Entidades.
-- `Infrastructure`: Implementaciones de repositorio y acceso a datos, middlewares y filtros.
-- `Presentation`: Endpoints y configuración general de la API.
+- `Core`: Entidades del dominio, interfaces.
+- `Application`: Casos de uso, DTOs, servicios, validaciones.
+- `Infrastructure`: Implementaciones de repositorios, EF, acceso a datos.
+- `API`: Capa de presentación: controladores, middlewares.
 
 ```text
-school-api/
-├── Src/
-│ ├── Core/ # Entidades del dominio, interfaces, objetos de valor
-│ ├── Application/ # Casos de uso, DTOs, servicios, validaciones
-│ ├── Infrastructure/ # Implementaciones de repositorios, EF, acceso a datos
-│ └── API/ # Capa de presentación: controladores, middlewares
-├── Scripts/
-│ └── init-db.sql # Script para creación inicial de base de datos
+├── school-api/
+│ ├── Properties/
+│ ├── SQL/
+│ ├── Src/
+│ ├── Core/
+│ ├── Application/
+│ ├── Infrastructure/
+│ |── API/
+│ |── appsettings.Development.json
+│ |── appsettings.json
+| └── school_api.csproj
+├── .gitignore
 ├── README.md
-├── school-api.sln
+├── school_web_api.sln
 ```
 
 ## 🔐 Autenticación
@@ -40,7 +44,9 @@ school-api/
 
 ## 🗃️ Diagrama de Base de Datos
 
+```text
 ![Data Base diagram](school_api/SQL/Diagram.png)
+```
 
 
 ## 🛠️ Instalar paquetes y ejecutar el proyecto
