@@ -23,11 +23,12 @@ API Rest para la gestion escolar que permite la autenticación de usuarios con d
 ├── school-api/
 │ ├── Properties/
 │ ├── SQL/
+│ │ |── Int.sql
 │ ├── Src/
-│ ├── Core/
-│ ├── Application/
-│ ├── Infrastructure/
-│ |── API/
+│ │ |── Core/
+│ │ |── Application/
+│ │ |── Infrastructure/
+│ │ |── API/
 │ |── appsettings.Development.json
 │ |── appsettings.json
 | └── school_api.csproj
@@ -44,9 +45,7 @@ API Rest para la gestion escolar que permite la autenticación de usuarios con d
 
 ## 🗃️ Diagrama de Base de Datos
 
-```text
 ![Data Base diagram](school_api/SQL/Diagram.png)
-```
 
 
 ## 🛠️ Instalar paquetes y ejecutar el proyecto
